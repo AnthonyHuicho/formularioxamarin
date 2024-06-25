@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App3.MainPage">
+
+    <ScrollView>
+        <StackLayout Padding="20" Spacing="15">
+            <Label Text="Formulario"
+                   FontSize="24"
+                   HorizontalOptions="Center" />
+
+            <Entry x:Name="NameEntry"
+                   Placeholder="Nombres y apellidos" />
+
+            <Entry x:Name="EmailEntry"
+                   Placeholder="Correo Electrónico"
+                   Keyboard="Email" />
+
+            <Entry x:Name="AgeEntry"
+                   Placeholder="Edad"
+                   Keyboard="Numeric" />
+
+            <Entry x:Name="AddressEntry"
+                   Placeholder="Dirección" />
+
+            <Entry x:Name="PhoneEntry"
+                   Placeholder="Teléfono"
+                   Keyboard="Telephone" />
+
+            <Entry x:Name="CareerEntry"
+                   Placeholder="Carrera Profesional" />
+
+            <Picker x:Name="EducationLevelPicker"
+                    Title="Nivel de Estudios Universitarios">
+                <Picker.Items>
+                    <x:String>Pregrado</x:String>
+                    <x:String>Postgrado</x:String>
+                </Picker.Items>
+            </Picker>
+
+            <Button Text="Enviar"
+                    Clicked="OnSubmitClicked"
+                    BackgroundColor="#007AFF"
+                    TextColor="White" />
+
+            <Label x:Name="ResultLabel"
+                   Text=""
+                   TextColor="White"
+                   HorizontalOptions="Center" />
+        </StackLayout>
+    </ScrollView>
+</ContentPage>
+
